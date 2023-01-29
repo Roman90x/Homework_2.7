@@ -51,4 +51,11 @@ public class Mechanic {
         return typeTransport;
     }
 
+    @Override
+    public String toString() {
+        return " Механик " +
+                fullName +
+                "из комапании" + company +
+                "работает с автомобилями класса " + typeTransport;
+    }
 }

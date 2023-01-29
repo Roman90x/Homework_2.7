@@ -23,6 +23,7 @@ public abstract class Transport<T extends Driver> {
         mechanics.add(mechanic);
     }
 
+
     public String getBrand() {
         return brand;
     }
@@ -55,4 +56,12 @@ public abstract class Transport<T extends Driver> {
         return mechanics;
     }
 
+
+    @Override
+    public String toString() {
+        return  brand +
+                model +
+                driver +
+                mechanics;
+    }
 }
